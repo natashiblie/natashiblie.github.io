@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Me</title>
+  <title>Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -36,80 +36,76 @@
     }
 
     .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 30px;
+    }
+
+    .profile {
+      flex: 1;
+      max-width: 300px;
       text-align: center;
-      padding: 60px 20px;
+      margin-right: 40px;
     }
 
-    h2 {
-      color: #d17a61;
-      margin-bottom: 30px;
-    }
-
-    .profile-img {
-      width: 140px;
-      height: 140px;
+    .profile img {
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin: 20px auto;
-    }
-
-    form {
-      max-width: 500px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    input, textarea {
-      padding: 14px;
-      border-radius: 6px;
-      border: 1px solid #ddd;
-      font-size: 1rem;
-      font-family: 'Quicksand', sans-serif;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    button {
-      background: #d17a61;
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    button:hover {
-      background: #c6664f;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .contact-info {
       margin-top: 20px;
       font-size: 0.95rem;
-      color: #444;
     }
 
     .contact-info a {
       color: #333;
       text-decoration: none;
-      font-weight: 600;
-      margin-left: 6px;
     }
 
     .contact-info a:hover {
-      text-decoration: underline;
+      color: #d17a61;
+    }
+
+    .form-section {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #d17a61;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #c6664f;
     }
   </style>
 </head>
 <body>
-  <!-- Navigation Bar -->
   <nav>
     <a href="index.html">Welcome</a>
     <a href="projects.html">Projects</a>
@@ -117,18 +113,22 @@
   </nav>
 
   <div class="container">
-    <h2>📬 Contact Me</h2>
-    <img src="images/pfp.jpg" alt="Natalia profile" class="profile-img" />
+    <div class="profile">
+      <img src="images/me.jpg" alt="Profile Photo">
+      <div class="contact-info">
+        📧 <a href="mailto:nataliashiblie@gmail.com">nataliashiblie@gmail.com</a><br>
+        💼 <a href="https://www.linkedin.com/in/natalia-ashiblie/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
 
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div class="contact-info">
-      nataliashiblie@gmail.com · <a href="https://www.linkedin.com/in/natalia-ashiblie/" target="_blank">LinkedIn</a>
+    <div class="form-section">
+      <h2>📬 Contact Me</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
 </body>
