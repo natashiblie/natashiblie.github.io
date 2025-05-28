@@ -114,6 +114,13 @@
       display: inline-block;
       font-weight: 600;
       font-size: 0.85rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .tagline span:hover {
+      background: #ffd9c4;
+      transform: scale(1.05);
+      cursor: default;
     }
 
     .cta {
@@ -127,6 +134,7 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      transition: transform 0.2s ease, background 0.2s ease;
     }
 
     .cta a:hover {
@@ -210,7 +218,7 @@
     <div class="gallery">
       <div class="photo-card">
         <img src="floorball.png" alt="Floorball Finals" />
-        <p>Representing my school in the floorball finals.</p>
+        <p>Representing my school in the floorball finals!</p>
       </div>
       <div class="photo-card">
         <img src="DSC01414.JPG" alt="Playing football as a kid" />
