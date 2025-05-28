@@ -50,13 +50,20 @@
       margin-right: 40px;
     }
 
-    .profile img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+  .profile-pic-large {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  }
+
+  input, textarea {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  }
+
 
     .contact-info {
       margin-top: 20px;
@@ -112,14 +119,12 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="container">
-    <div class="profile">
-      <img src="images/me.jpg" alt="Profile Photo">
-      <div class="contact-info">
-        📧 <a href="mailto:nataliashiblie@gmail.com">nataliashiblie@gmail.com</a><br>
-        💼 <a href="https://www.linkedin.com/in/natalia-ashiblie/" target="_blank">LinkedIn</a>
-      </div>
-    </div>
+<div class="contact-left">
+  <img src="images/me.jpg" alt="Profile Photo" class="profile-pic-large" />
+  <p><a href="mailto:nataliashiblie@gmail.com">📧 Gmail</a></p>
+  <p><a href="https://www.linkedin.com/in/natalia-ashiblie/" target="_blank">💼 LinkedIn</a></p>
+</div>
+
 
     <div class="form-section">
       <h2>📬 Contact Me</h2>
