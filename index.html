@@ -16,8 +16,8 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     nav {
@@ -95,28 +95,30 @@
       max-width: 600px;
     }
 
-    .tags span {
+    .tagline {
       background: #ffe0cc;
-      padding: 6px 12px;
+      padding: 5px 10px;
       border-radius: 6px;
-      margin-right: 5px;
-      font-size: 0.9em;
+      display: inline-block;
+      margin-top: 15px;
     }
 
-    .cta-button {
-      display: inline-block;
+    .cta {
       margin-top: 30px;
+    }
+
+    .cta a {
       background: #d17a61;
       color: white;
       padding: 10px 20px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
     }
 
-    .cta-button:hover {
-      background: #c15a4e;
+    .gif {
+      width: 28px;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -135,15 +137,14 @@
     <div class="intro">
       <img src="pfp.jpg" alt="Profile photo" />
       <div class="intro-text">
-        <h1>Hey, I'm Natalia 🦕</h1>
+        <h1>Hey, I'm Natalia <img src="https://media.giphy.com/media/26gslU06gkhFVfG3G/giphy.gif" alt="cartoon wave" class="gif" /></h1>
         <p>
-          I'm currently an Economics student at LSE, and I’m passionate about trying new things,
-          especially when it comes to coding and exploring how tech can solve real-world problems.
+          I'm currently an Economics student at LSE, and I’m passionate about trying new things, especially when it comes to coding and exploring how tech can solve real-world problems.
         </p>
-        <div class="tags">
-          <span>#python</span><span>#LSE</span><span>#curiousmind</span>
+        <div class="tagline">#Python #CuriousMind #LSE</div>
+        <div class="cta">
+          <a href="projects.html">View My Projects →</a>
         </div>
-        <a class="cta-button" href="projects.html">View My Projects →</a>
       </div>
     </div>
   </div>
