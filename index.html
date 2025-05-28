@@ -41,7 +41,7 @@
 
     h1 {
       font-size: 2rem;
-      margin-top: 20px;
+      margin-top: 0;
     }
 
     ul {
@@ -56,13 +56,6 @@
       color: #aaa;
     }
 
-    .profile {
-      width: 120px;
-      border-radius: 50%;
-      margin: 20px 0;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
     h2 {
       margin-top: 50px;
       color: #d17a61;
@@ -74,25 +67,26 @@
 
     a:hover {
       color: #d17a61;
+    }
 
     .intro {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
 
-.intro img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+    .intro img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
-.intro-text {
-  max-width: 600px;
+    .intro-text {
+      max-width: 600px;
     }
   </style>
 </head>
@@ -111,9 +105,15 @@
     
     <!-- Welcome Section -->
     <div id="welcome">
-      <h1>Hey, I'm Natalia 🦕</h1>
-      <img src="pfp.jpg" alt="Profile photo" class="profile" />
-      <p>I’m an Economics student at LSE who loves building quirky things with Python and figuring stuff out along the way.</p>
+      <div class="intro">
+        <img src="pfp.jpg" alt="Profile photo" />
+        <div class="intro-text">
+          <h1>Hey, I'm Natalia 🦕</h1>
+          <p>
+            I’m an Economics student at LSE with a curiosity for data, tech, and strategy. I love building quirky things with Python and figuring stuff out along the way.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Projects Section -->
