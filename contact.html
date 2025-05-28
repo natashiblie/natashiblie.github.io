@@ -4,43 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Me</title>
-
-    <!-- Favicon (updated paths) -->
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-  <link rel="manifest" href="icons/site.webmanifest">
-  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-  
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-
     body {
       font-family: 'Quicksand', sans-serif;
       background: #fff7f0;
       color: #333;
       margin: 0;
-      padding: 40px;
+      padding: 40px 20px;
     }
 
     h2 {
       color: #d17a61;
       margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-wrapper {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
 
     form {
-      max-width: 500px;
-      margin: auto;
       display: flex;
       flex-direction: column;
       gap: 15px;
+      margin-top: 10px;
     }
 
     input, textarea {
@@ -65,25 +66,37 @@
       background-color: #c15c4f;
     }
 
-    footer {
+    .links {
       margin-top: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    .links a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .links a:hover {
+      color: #d17a61;
     }
   </style>
 </head>
 <body>
-  <h2>📬 Contact Me</h2>
-  <form action="https://formspree.io/f/xdkgqlqb" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <div class="contact-wrapper">
+    <h2>📬 Contact Me</h2>
+    <img src="images/me.jpg" alt="Profile Photo" class="profile-pic" />
 
-  <footer>
-    Alternatively, you can reach me at <a href="mailto:nataliashiblie@gmail.com">nataliashiblie@gmail.com</a>
-  </footer>
+    <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="links">
+      <p><a href="mailto:nataliashiblie@gmail.com">nataliashiblie@gmail.com</a> · <a href="https://www.linkedin.com/in/natalia-ashiblie/" target="_blank">LinkedIn</a></p>
+    </div>
+  </div>
 </body>
 </html>
