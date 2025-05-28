@@ -129,33 +129,32 @@
       margin-top: 20px;
     }
 
-    .photo-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+.photo-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* consistent height */
+}
 
-    .photo-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-    }
+.photo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-    .photo-card img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-
-    .photo-card p {
-      margin: 0;
-      padding: 12px 15px;
-      font-size: 0.95rem;
-      color: #444;
-    }
+.photo-card p {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  color: #444;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+    
   </style>
 </head>
 <body>
