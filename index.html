@@ -12,6 +12,12 @@
       color: #333;
       margin: 0;
       padding: 0;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     nav {
@@ -88,6 +94,30 @@
     .intro-text {
       max-width: 600px;
     }
+
+    .tags span {
+      background: #ffe0cc;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-right: 5px;
+      font-size: 0.9em;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      background: #d17a61;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #c15a4e;
+    }
   </style>
 </head>
 <body>
@@ -107,15 +137,20 @@
       <div class="intro-text">
         <h1>Hey, I'm Natalia 🦕</h1>
         <p>
-          I'm currently an Economics student at LSE, and I’m passionate about trying new things, especially when it comes to coding and exploring how tech can solve real-world problems.
+          I'm currently an Economics student at LSE, and I’m passionate about trying new things,
+          especially when it comes to coding and exploring how tech can solve real-world problems.
         </p>
+        <div class="tags">
+          <span>#python</span><span>#LSE</span><span>#curiousmind</span>
+        </div>
+        <a class="cta-button" href="projects.html">View My Projects →</a>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    © 2025 Natalia Ashiblie | 📬 <a href="mailto:nataliashiblie@gmail.com">Email me</a>
+    © 2025 Natalia Ashiblie | 📫 <a href="mailto:nataliashiblie@gmail.com">Email me</a>
   </footer>
 </body>
 </html>
