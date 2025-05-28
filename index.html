@@ -4,14 +4,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Natalia Shiblie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; background: #111; color: #eee; margin: 0; padding: 0; }
-    nav { background: #1f1f1f; display: flex; gap: 20px; padding: 15px 30px; align-items: center; }
-    nav a { color: #ddd; text-decoration: none; font-weight: 500; }
-    nav a:hover { color: #ff8a65; }
-    .active { border-bottom: 2px solid #ff8a65; }
-    .container { padding: 40px 30px; }
-    h1 { font-size: 2rem; }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #111;
+      color: #eee;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background: #2b2b2b;
+      display: flex;
+      gap: 20px;
+      padding: 15px 30px;
+      align-items: center;
+      border-radius: 0 0 10px 10px;
+    }
+
+    nav a {
+      color: #ffd3b6;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #ff8a65;
+      transform: scale(1.05);
+    }
+
+    .container {
+      padding: 40px 30px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    img.profile {
+      border-radius: 50%;
+      width: 120px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -24,8 +73,21 @@
   </nav>
 
   <div class="container">
-    <h1>Hi, I'm Natalia 👋</h1>
-    <p>Welcome to my personal site. I'm an Economics student at LSE, exploring tech, strategy, and data one project at a time.</p>
+    <h1>Hey, I'm Natalia 🦕</h1>
+    <p>I’m an Economics student at LSE who loves building quirky things with Python and figuring stuff out along the way.</p>
+
+    <!-- Optional avatar -->
+    <!-- <img src="profile.png" alt="Cartoon avatar" class="profile" /> -->
+
+    <h2>🧠 Projects</h2>
+    <ul>
+      <li><a href="https://github.com/natashiblie/is-london-rainy" target="_blank">Is London Rainy?</a> – Python & weather APIs</li>
+      <li><a href="https://github.com/natashiblie/ds105a-2024" target="_blank">DS105A Project</a> – Collaborative data dashboard</li>
+    </ul>
   </div>
+
+  <footer>
+    © 2025 Natalia Ashiblie | 💌 <a href="mailto:nataliashiblie@gmail.com">Email me</a>
+  </footer>
 </body>
 </html>
