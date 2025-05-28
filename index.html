@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Natalia Ashiblie</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
+    /* your full CSS from earlier remains unchanged */
     body {
       font-family: 'Quicksand', sans-serif;
       background: #fff7f0;
@@ -115,8 +123,8 @@
     }
 
     .cta a:hover {
-  transform: scale(1.05);
-  background: #c6664f;
+      transform: scale(1.05);
+      background: #c6664f;
     }
 
     .gif {
@@ -134,85 +142,29 @@
       margin-top: 20px;
     }
 
-.photo-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
+    .photo-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
 
+    .photo-card img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      height: auto;
+    }
 
-.photo-card img {
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  height: auto;
-}
-
-.photo-card p {
-  margin: 0;
-  padding: 10px 15px;
-  font-size: 0.95rem;
-  color: #444;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-    
+    .photo-card p {
+      margin: 0;
+      padding: 10px 15px;
+      font-size: 0.95rem;
+      color: #444;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+    }
   </style>
 </head>
-<body>
-  <!-- Navigation Bar -->
-  <nav>
-    <a href="index.html">Welcome</a>
-    <a href="projects.html">Projects</a>
-    <a href="skills.html">Skills</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <!-- Content Container -->
-  <div class="container">
-    <!-- Welcome Section -->
-    <div class="intro">
-      <img src="pfp.jpg" alt="Profile photo" class="profile-pic" />
-      <div class="intro-text">
-        <h1>Hey, I'm Natalia <img src="banana.gif" alt="banana gif" class="gif" /></h1>
-        <p>
-          I'm currently an Economics student at LSE, and I’m passionate about trying new things, especially when it comes to coding and exploring how tech can solve real-world problems.
-        </p>
-        <div class="tagline">#Sports #Econ #LSE</div>
-        <div class="cta">
-          <a href="projects.html">View My Projects →</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Gallery Section -->
-    <h2>📷 A Glimpse Into My Life</h2>
-    <div class="gallery">
-      <div class="photo-card">
-        <img src="floorball.png" alt="Floorball Finals" />
-        <p>Representing my school in the floorball finals.</p>
-      </div>
-      <div class="photo-card">
-        <img src="DSC01414.JPG" alt="Playing football as a kid" />
-        <p>Football was my favourite childhood sport!</p>
-      </div>
-      <div class="photo-card">
-        <img src="fam.png" alt="Family at Disneyland" />
-        <p>My family and I at Disneyland. I love theme parks.</p>
-      </div>
-      <div class="photo-card">
-        <img src="cat.png" alt="Cat love" />
-        <p>I've always grown up loving cats. I’d love to adopt a ragdoll someday!</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    © 2025 Natalia Ashiblie | 📫 <a href="mailto:nataliashiblie@gmail.com">Email me</a>
-  </footer>
-</body>
-</html>
