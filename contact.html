@@ -34,18 +34,21 @@
       transform: scale(1.05);
     }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 40px;
-      gap: 60px;
-      flex-wrap: wrap;
-    }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 30px; /* reduced gap */
+  flex-wrap: wrap;
+  max-width: 1000px; /* keeps it from stretching too far */
+  margin: 0 auto;
+}
+
 
     .contact-left {
       text-align: center;
-      flex: 1 1 250px;
+      flex: 1 1 300px;
     }
 
     .contact-left img {
