@@ -11,91 +11,124 @@
       background: #fff7f0;
       color: #333;
       margin: 0;
-      padding: 40px 20px;
+      padding: 0;
+    }
+
+    nav {
+      background: #ffe0cc;
+      display: flex;
+      gap: 20px;
+      padding: 15px 30px;
+      align-items: center;
+      border-radius: 0 0 10px 10px;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #d17a61;
+      transform: scale(1.05);
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px 20px;
     }
 
     h2 {
       color: #d17a61;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      margin-bottom: 30px;
     }
 
-    .contact-wrapper {
-      max-width: 600px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .profile-pic {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
+    .profile-img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px auto;
     }
 
     form {
+      max-width: 500px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 15px;
-      margin-top: 10px;
+      gap: 16px;
     }
 
     input, textarea {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      padding: 14px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
       font-size: 1rem;
-      font-family: inherit;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
     }
 
     button {
-      background-color: #d17a61;
+      background: #d17a61;
       color: white;
       border: none;
       padding: 12px;
       border-radius: 8px;
-      cursor: pointer;
       font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
     }
 
     button:hover {
-      background-color: #c15c4f;
+      background: #c6664f;
     }
 
-    .links {
-      margin-top: 40px;
+    .contact-info {
+      margin-top: 20px;
       font-size: 0.95rem;
+      color: #444;
     }
 
-    .links a {
+    .contact-info a {
       color: #333;
       text-decoration: none;
       font-weight: 600;
+      margin-left: 6px;
     }
 
-    .links a:hover {
-      color: #d17a61;
+    .contact-info a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="contact-wrapper">
-    <h2>📬 Contact Me</h2>
-    <img src="images/me.jpg" alt="Profile Photo" class="profile-pic" />
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Welcome</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+  <div class="container">
+    <h2>📬 Contact Me</h2>
+    <img src="images/pfp.jpg" alt="Natalia profile" class="profile-img" />
+
+    <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
 
-    <div class="links">
-      <p><a href="mailto:nataliashiblie@gmail.com">nataliashiblie@gmail.com</a> · <a href="https://www.linkedin.com/in/natalia-ashiblie/" target="_blank">LinkedIn</a></p>
+    <div class="contact-info">
+      nataliashiblie@gmail.com · <a href="https://www.linkedin.com/in/natalia-ashiblie/" target="_blank">LinkedIn</a>
     </div>
   </div>
 </body>
