@@ -90,6 +90,21 @@
       flex: 1 1 400px;
     }
 
+    .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
     h2 {
       color: #d17a61;
       display: flex;
@@ -159,14 +174,13 @@ button {
         ✅ Thanks for your message! I'll get back to you soon.
       </div>
 
-<form action="https://formspree.io/f/your-form-id" method="POST" onsubmit="showMessage()">
-  <div style="max-width: 100%; width: 100%;">
-    <input type="text" name="name" placeholder="e.g. Jane Doe" required style="box-sizing: border-box; width: 100%;" />
-    <input type="email" name="email" placeholder="e.g. jane@email.com" required style="box-sizing: border-box; width: 100%;" />
-    <textarea name="message" placeholder="Let me know how I can help you!" rows="6" required style="box-sizing: border-box; width: 100%;"></textarea>
-    <button type="submit" style="width: 100%; margin-top: 10px;">Send Message</button>
-  </div>
+<form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" onsubmit="showMessage()">
+  <input type="text" name="name" placeholder="e.g. Jane Doe" required />
+  <input type="email" name="email" placeholder="e.g. jane@email.com" required />
+  <textarea name="message" placeholder="Let me know how I can help you!" rows="6" required></textarea>
+  <button type="submit">Send Message</button>
 </form>
+
 
     </div>
   </div>
