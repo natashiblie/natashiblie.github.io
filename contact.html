@@ -6,7 +6,7 @@
   <title>Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Favicon (updated paths) -->
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -15,15 +15,15 @@
 
   <style>
     body {
-  font-family: 'Quicksand', sans-serif;
-  background: #fff7f0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  animation: fadeIn 0.7s ease-in;
-}
+      font-family: 'Quicksand', sans-serif;
+      background: #fff7f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 0.7s ease-in;
+    }
 
-   @keyframes fadeIn {
+    @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
@@ -48,17 +48,16 @@
       transform: scale(1.05);
     }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 40px 20px;
-  gap: 30px; /* reduced gap */
-  flex-wrap: wrap;
-  max-width: 1000px; /* keeps it from stretching too far */
-  margin: 0 auto;
-}
-
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
     .contact-left {
       text-align: center;
@@ -80,6 +79,7 @@
     .contact-left a {
       color: #333;
       text-decoration: none;
+      font-weight: 500;
     }
 
     .contact-left a:hover {
@@ -95,7 +95,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     input, textarea {
@@ -122,13 +122,20 @@
     button:hover {
       background: #c6664f;
     }
+
+    #form-message {
+      display: none;
+      color: green;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
   </style>
 </head>
 <body>
   <nav>
-  <a href="index.html">🌸 Welcome</a>
-  <a href="projects.html">🛠️ Projects</a>
-  <a href="contact.html">💌 Contact</a>
+    <a href="index.html">🌸 Welcome</a>
+    <a href="projects.html">🛠️ Projects</a>
+    <a href="contact.html">💌 Contact</a>
   </nav>
 
   <div class="container">
@@ -142,13 +149,29 @@
     <!-- Right Side -->
     <div class="contact-right">
       <h2>📬 Contact Me</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <p style="margin-top: -10px; color: #666; font-size: 0.95rem;">
+        Feel free to reach out — whether it’s about a project, a question, or just to say hi.
+      </p>
+
+      <div id="form-message">
+        ✅ Thanks for your message! I'll get back to you soon.
+      </div>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" onsubmit="showMessage()">
+        <input type="text" name="name" placeholder="e.g. Jane Doe" required />
+        <input type="email" name="email" placeholder="e.g. jane@email.com" required />
+        <textarea name="message" placeholder="Let me know how I can help you!" rows="6" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
   </div>
+
+  <script>
+    function showMessage() {
+      const msg = document.getElementById('form-message');
+      msg.style.display = 'block';
+      setTimeout(() => { msg.style.display = 'none'; }, 4000);
+    }
+  </script>
 </body>
 </html>
