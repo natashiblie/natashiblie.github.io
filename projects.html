@@ -5,29 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Projects</title>
 
-  <!-- Favicon (updated paths) -->
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="manifest" href="icons/site.webmanifest">
   <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-  font-family: 'Quicksand', sans-serif;
-  background: #fff7f0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  animation: fadeIn 0.7s ease-in;
-}
+      font-family: 'Quicksand', sans-serif;
+      background: #fff7f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 0.7s ease-in;
+    }
 
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
 
     nav {
       background: #ffe0cc;
@@ -119,13 +118,24 @@
     .project-text a:hover {
       text-decoration: underline;
     }
+
+    .badge-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .badge-stack img {
+      height: 28px;
+    }
   </style>
 </head>
 <body>
   <nav>
-  <a href="index.html">🌸 Welcome</a>
-  <a href="projects.html">🛠️ Projects</a>
-  <a href="contact.html">💌 Contact</a>
+    <a href="index.html">🌸 Welcome</a>
+    <a href="projects.html">🛠️ Projects</a>
+    <a href="contact.html">💌 Contact</a>
   </nav>
 
   <div class="container">
@@ -141,6 +151,12 @@
             <br><br>
             This was part of a summative assignment for a data science course, for which I received a grade of 95.
           </p>
+          <div class="badge-stack">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+            <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
+            <img src="https://img.shields.io/badge/lets--plot-333333?style=for-the-badge" alt="lets-plot">
+            <img src="https://img.shields.io/badge/datetime-555555?style=for-the-badge" alt="datetime">
+          </div>
           <a href="https://github.com/natashiblie/is-london-rainy" target="_blank">View on GitHub →</a>
         </div>
       </div>
@@ -159,16 +175,17 @@
       </div>
 
       <div class="project-card">
-  <img src="images/indonesia.webp" alt="Indonesia Growth Analysis" />
-  <div class="project-text">
-    <h3>Indonesia Growth Analysis 🇮🇩</h3>
-    <p>This project investigates Indonesia’s long-term economic development using the Solow and Romer models. We examined how capital accumulation, population growth, and R&D contribute to macroeconomic trends.  
-    <br><br>
-    This was a summative team project for our Macroeconomics course, and we scored 84.</p>
-    <a href="https://github.com/ec2b1-case-study/growth-analysis-indonesia/tree/main" target="_blank">View on GitHub →</a>
-  </div>
-</div>
-
+        <img src="images/indonesia.webp" alt="Indonesia Growth Analysis" />
+        <div class="project-text">
+          <h3>Indonesia Growth Analysis 🇮🇩</h3>
+          <p>
+            This project investigates Indonesia’s long-term economic development using the Solow and Romer models. We examined how capital accumulation, population growth, and R&D contribute to macroeconomic trends.  
+            <br><br>
+            This was a summative team project for our Macroeconomics course, and we scored 84.
+          </p>
+          <a href="https://github.com/ec2b1-case-study/growth-analysis-indonesia/tree/main" target="_blank">View on GitHub →</a>
+        </div>
+      </div>
 
     </div>
   </div>
