@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Projects</title>
-
+ 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="manifest" href="icons/site.webmanifest">
   <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-
+ 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -22,12 +22,12 @@
       padding: 0;
       animation: fadeIn 0.7s ease-in;
     }
-
+ 
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
+ 
     nav {
       background: #ffe0cc;
       display: flex;
@@ -36,42 +36,42 @@
       align-items: center;
       border-radius: 0 0 10px 10px;
     }
-
+ 
     nav a {
       color: #333;
       text-decoration: none;
       font-weight: 600;
       transition: 0.2s;
     }
-
+ 
     nav a:hover {
       color: #d17a61;
       transform: scale(1.05);
     }
-
+ 
     .container {
       padding: 40px 30px;
     }
-
+ 
     h2 {
       margin-top: 20px;
       color: #d17a61;
     }
-
+ 
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
       color: #aaa;
     }
-
+ 
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
-
+ 
     .project-card {
       background: #fff;
       border-radius: 12px;
@@ -81,32 +81,32 @@
       display: flex;
       flex-direction: column;
     }
-
+ 
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.1);
 }
-
+ 
     .project-card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
-
+ 
     .project-text {
       padding: 16px;
     }
-
+ 
     .project-text h3 {
       margin: 0 0 10px 0;
       font-size: 1.1rem;
     }
-
+ 
     .project-text p {
       font-size: 0.95rem;
       color: #444;
     }
-
+ 
     .project-text a {
       display: inline-block;
       margin-top: 10px;
@@ -114,25 +114,25 @@
       font-weight: 600;
       text-decoration: none;
     }
-
+ 
     .project-text a:hover {
       text-decoration: underline;
     }
-
+ 
 .badge-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 12px;
 }
-
+ 
   .badge-stack img {
   height: auto;
   width: auto;
   max-height: 30px;
   max-width: 150px;
 }
-
+ 
   </style>
 </head>
 <body>
@@ -141,11 +141,11 @@
     <a href="projects.html">🛠️ Projects</a>
     <a href="contact.html">💌 Contact</a>
   </nav>
-
+ 
   <div class="container">
     <h2>🛠️ My Projects</h2>
     <div class="project-grid">
-
+ 
       <div class="project-card">
         <img src="images/londonrain.jpg" alt="Is London Rainy Project" />
         <div class="project-text">
@@ -163,7 +163,7 @@
           <a href="https://github.com/natashiblie/is-london-rainy" target="_blank">View on GitHub →</a>
         </div>
       </div>
-
+ 
 <div class="project-card">
   <img src="images/concertimage.avif" alt="Spotify Analysis Project" />
   <div class="project-text">
@@ -182,7 +182,7 @@
     <a href="https://github.com/lse-ds105/w10-summative-natalia_eloise" target="_blank">View on GitHub →</a>
   </div>
 </div>
-
+ 
 <div class="project-card">
   <img src="images/indonesia.webp" alt="Indonesia Growth Analysis" />
   <div class="project-text">
@@ -201,17 +201,36 @@
     <a href="https://github.com/ec2b1-case-study/growth-analysis-indonesia/tree/main" target="_blank">View on GitHub →</a>
   </div>
 </div>
-
+ 
+<div class="project-card">
+  <img src="images/gradcam.png" alt="AI Generated Image Detection Project" />
+  <div class="project-text">
+    <h3>AI Generated Image Detection 🖼️</h3>
+    <p>
+      This project compares CNNs and Vision Transformers for detecting AI generated images using the CIFAKE dataset. We used Grad CAM analysis on a fine tuned ViT B/16 to visualise which image regions the model relied on when classifying real versus fake images.
+      <br><br>
+      This was a group paper for my ST311 Applied Machine Learning course, for which I received a grade of 71.
+    </p>
+    <div class="badge-stack">
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+      <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
+      <img src="https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="numpy">
+      <img src="https://img.shields.io/badge/plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="plotly">
+    </div>
+    <a href="11_paper.pdf" target="_blank">View Project →</a>
+  </div>
+</div>
+ 
 <div class="project-card" style="background: #fff8f3;">
   <div class="project-text" style="text-align: center; padding: 50px 20px;">
     <h3>🚧 More Projects Coming Soon</h3>
     <p>I'm always building — check back later for updates!</p>
   </div>
 </div>
-
+ 
     </div>
   </div>
-
+ 
 <!-- Footer -->
 <footer style="text-align: center; padding: 40px 20px; font-size: 0.95rem; color: #777;">
   💌 Curious about my projects or just want to connect?  
@@ -219,7 +238,6 @@
   <br><br>
   © 2026 Natalia Ashiblie
 </footer>
-
+ 
 </body>
 </html>
-
